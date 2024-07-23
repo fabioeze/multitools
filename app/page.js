@@ -4,12 +4,12 @@ import HomeContent from "@/app/assets/home/homeContent";
 
 export default function Home() {
     return (
-        <div>
+        <>
             <LayoutPatern page='Home'>
                 <Content texto="Página Inicial">
                     <HomeContent />
                 </Content>
             </LayoutPatern>
-        </div>
+        </>
     );
 }

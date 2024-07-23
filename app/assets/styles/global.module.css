@@ -13,3 +13,10 @@
     background: var(--container-background);
     height: calc(100vh - 110px);
 }
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 65px);
+    overflow-y: auto;
+}

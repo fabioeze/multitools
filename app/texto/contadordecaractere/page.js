@@ -1,10 +1,15 @@
-import styles from "./contadordecaractere.module.css";
-import styleGlobal from '@/app/assets/styles/global.module.css'
+import LayoutPatern from "@/app/assets/components/layout/layoutPatern";
+import Content from "@/app/assets/components/content/content";
+import FunctionContadorDeCaractere from "./FunctionContadorDeCaractere";
 
 export default function ContadorDeCaractere() {
     return (
-        <div className={styleGlobal.container}>
-
-        </div>
+        <>
+            <LayoutPatern page='Contador de Caractere'>
+                <Content texto="Contador de Caractere">
+                    <FunctionContadorDeCaractere />
+                </Content>
+            </LayoutPatern>
+        </>
     );
 }

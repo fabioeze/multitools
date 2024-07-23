@@ -2,8 +2,11 @@
 
 import { useState } from 'react';
 import styles from "./contadordecaractere.module.css";
+import FormContadorDeCaractere from "./FormContadorDeCaractere";
+import BeneficiosContador from "./beneficiosContador";
+import stylesGlobal from '@/app/assets/styles/global.module.css';
 
-export default function FormContador() {
+export default function FunctionContadorDeCaractere() {
     const [text, setText] = useState('');
     const [quantidadeCaractere, setQuantidadeCaractere] = useState(0);
     const [quantidadePalavras, setQuantidadePalavras] = useState(0);
@@ -22,18 +25,9 @@ export default function FormContador() {
     }
 
     return (
-        <section className={styles.mainSection}>
-            <form>
-                <textarea value={text} onChange={handleChange}></textarea>
-                <div className={styles.results}>
-                <ul>
-                    <li>Quantidade de Caracteres: {quantidadeCaractere}/{maxCharacters}</li>
-                    <li>Quantidade de Palavras: {quantidadePalavras}</li>
-                    <li>Quantidade de Linhas: {quantidadeLinhas}</li>
-                </ul>
-            </div>
-            </form>
-
+        <section className={stylesGlobal.content}>
+            <FormContadorDeCaractere/>
+            <BeneficiosContador />
         </section>
     );
 }

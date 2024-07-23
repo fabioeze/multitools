@@ -5,12 +5,12 @@ import styles from './options.module.css'
 import { useState } from 'react';
 
 const Option = ({ texto, children }) => {
-    const [imagem, setImagem] = useState('folder.svg');
+    const [imagem, setImagem] = useState('/folder.svg');
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
         setImagem((prevImagem) => 
-            prevImagem === 'folder.svg' ? 'openFolder.svg' : 'folder.svg'
+            prevImagem === '/folder.svg' ? '/openFolder.svg' : '/folder.svg'
         );
         setClicked((click) => 
             click === false ? true : false

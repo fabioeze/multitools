@@ -5,7 +5,7 @@ const SubOptionsTexto = () => {
 
     return (
         <ul>
-            <li><Link href="/" className={styles.link}>teste</Link></li>
+            <li><Link href="/texto/contadordecaractere" className={styles.link}>Contador de Caractere</Link></li>
             </ul>    );
 };
 
