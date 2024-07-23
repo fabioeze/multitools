@@ -1,0 +1,33 @@
+.optionMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    flex-direction: column;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subOptions {
+    display: none;
+}
+
+.subOptionsActive {
+    margin-left: 18px;
+}
+
+.subOptions li::before,
+.subOptionsActive li::before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgNSA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNC44OTcwNyA0LjI2MjE0TDAuNzUzMTU1IDAuMTI4NDZDMC40OTM3NyAtMC4xMjkzMzMgMCAwLjAyNjg4NTggMCAwLjM2NjMyM1Y4LjYzMzY4QzAgOC45NzMxMSAwLjQ5Mzc3IDkuMTI5MzMgMC43NTMxNTUgOC44NzE1NEw0Ljg5NzA3IDQuNzM3ODZDNC45Mjk0NyA0LjcwNzg0IDQuOTU1MzcgNC42NzExNiA0Ljk3MzExIDQuNjMwMThDNC45OTA4NCA0LjU4OTIgNSA0LjU0NDg1IDUgNC41QzUgNC40NTUxNSA0Ljk5MDg0IDQuNDEwOCA0Ljk3MzExIDQuMzY5ODJDNC45NTUzNyA0LjMyODg0IDQuOTI5NDcgNC4yOTIxNiA0Ljg5NzA3IDQuMjYyMTRaIiBmaWxsPSIjMEMxQjMzIi8+Cjwvc3ZnPg==');
+    left: -20px;
+}
+
+.title {
+    font-size: 14px;
+    text-align: center;
+    text-align: -webkit-center;
+}

@@ -1,16 +1,15 @@
 .container {
-    display: flex; /* Usa flexbox para alinhar o menu e o conteúdo principal */
-    flex-direction: column;
-    height: 100vh; /* Garante que a altura da container cubra toda a viewport */
-    background-color: var(--text); /* Define a cor de fundo */
-    margin: 0; /* Remove margens, se houver */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: calc(100% - 30px);
 }
 
-.rightSide {
-    margin-left: 270px; /* Cria espaço suficiente para o menu lateral fixo */
-    margin-top: 70px; /* Cria espaço suficiente para o cabeçalho fixo */
-    padding: 20px 0; /* Adiciona padding conforme necessário */
-    width: calc(100% - 270px); /* Ajusta a largura para compensar o menu lateral fixo */
-    height: calc(100vh - 70px); /* Ajusta a altura para compensar o cabeçalho fixo */
-    overflow: auto; /* Adiciona rolagem se o conteúdo exceder a altura */
+.insideContainer {
+    border: 2px solid var(--text-color-container);
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+    background: var(--container-background);
+    height: calc(100vh - 110px);
 }

@@ -1,0 +1,8 @@
+.navegation {
+    width: 250px;
+}
+
+.sidemenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

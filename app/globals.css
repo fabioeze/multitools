@@ -1,44 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 :root {
   --max-width-1400: 1400px;
   --max-width-1000: 1000px;
   --max-width-700: 700px;
 
 
-  --text: #f9f9e7;
-  --main: #505045;
-  --second: #161613;
-  --aviso-color: #c0a1ae;
-  --details-color: #c1e0e0;
+  --container-background: #D7E4F2;
+  --header-background: #7A306C;
+  --text-color-container: #0C1B33;
+  --header-container-background: #03B5AA;
+  --folder-color: #FEDC87;
+
+  --font-family: "Share Tech Mono", monospace;
 }
 
 * {
   padding: 0;
   margin: 0;
   outline: 0;
-  font-family: var(--font-roboto);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
 }
 
-header ul {
-  color: aliceblue;
+li {
   display: flex;
-  justify-content: flex-end;
-}
-
-
-header {
-  position: fixed;
-  top: 10px; 
-  left: 270px; 
-  right: 10px; 
-  height: 28px; 
-  background: var(--second);
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0px 0px 4px 1px #5d5d5d;
-  z-index: 1000;
-}
-
-header ul li {
-  display: block;
-  padding: 2px 10px;
 }

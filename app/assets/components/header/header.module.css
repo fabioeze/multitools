@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--header-background);
+}
+
+.image {
+    width: 80px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1, .title span {
+    font-size: 40px;
+    color: #ffffff;
+}
