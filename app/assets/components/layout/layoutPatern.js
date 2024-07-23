@@ -6,7 +6,7 @@ import stylesGlobal from '@/app/assets/styles/global.module.css';
 import Ads from '@/app/assets/components/ads/ads';
 import PropTypes from 'prop-types';
 
-const Layout = ({ page, children }) => {
+const LayoutPatern = ({ page, children }) => {
     return (
         <div>
             <Header page={page} />
@@ -25,9 +25,9 @@ const Layout = ({ page, children }) => {
     );
 };
 
-Layout.propTypes = {
+LayoutPatern.propTypes = {
     page: PropTypes.any.isRequired,
     children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default LayoutPatern;
