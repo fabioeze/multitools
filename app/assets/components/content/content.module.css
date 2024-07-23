@@ -2,3 +2,12 @@
     width: calc(100vw - 520px);
     padding: 0 15px;
 }
+
+@media (max-width: 1300px) {
+
+    .main {
+        width: calc(100vw - 420px);
+        padding: 0 15px;
+    }
+
+}

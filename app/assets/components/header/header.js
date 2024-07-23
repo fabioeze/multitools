@@ -10,7 +10,7 @@ const Header = ({ page }) => {
             <div className={stylesGlobal.container}>
                 <div className={styles.image}>
                     <picture>
-                        <Image src="/logo.svg" width={40} height={40} />
+                        <Image src="/logo.svg" width={40} height={40} className={styles.responsiveImage}/>
                     </picture>
                 </div>
                 <div className={styles.title}>
@@ -22,7 +22,7 @@ const Header = ({ page }) => {
                 </div>
                 <div className={styles.image}>
                     <picture>
-                        <Image src="/home.svg" width={40} height={40} />
+                        <Image src="/home.svg" width={40} height={40} className={styles.responsiveImage}/>
                     </picture>
                 </div>
             </div>

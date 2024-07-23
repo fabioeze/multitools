@@ -20,3 +20,15 @@
     height: calc(100% - 65px);
     overflow-y: auto;
 }
+@media (max-width: 1300px) {
+
+    .container {
+        padding: 4px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .insideContainer {
+        height: calc(100vh - 66px);
+    }
+
+}

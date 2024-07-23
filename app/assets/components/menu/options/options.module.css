@@ -31,3 +31,21 @@
     text-align: center;
     text-align: -webkit-center;
 }
+
+.responsiveImage{
+    width: 70px;
+    height: 50px;
+}
+
+@media (max-width: 1300px) {
+
+    .optionMain {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .responsiveImage{
+        width: 55px;
+        height: 39px;
+    }
+
+}

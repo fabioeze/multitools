@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import styles from "./contadordecaractere.module.css";
 
 export default function FormContadorDeCaractere() {
     const [text, setText] = useState('');
@@ -20,11 +21,11 @@ export default function FormContadorDeCaractere() {
     }
 
     return (
-        <section>
+        <section className={styles.mainSection}>
             <form>
-                <textarea value={text} onChange={handleChange}></textarea>
+                <textarea value={text} onChange={handleChange} placeholder='Insira seu texto aqui'></textarea>
                 <div>
-                    <ul>
+                    <ul className={styles.lista}>
                         <li>Quantidade de Caracteres: {quantidadeCaractere}/{maxCharacters}</li>
                         <li>Quantidade de Palavras: {quantidadePalavras}</li>
                         <li>Quantidade de Linhas: {quantidadeLinhas}</li>

@@ -3,3 +3,11 @@
     width: 200px;
     height: 100%;
 }
+
+@media (max-width: 1300px) {
+
+    .adsContainer {
+        width: 150px;
+    }
+
+}

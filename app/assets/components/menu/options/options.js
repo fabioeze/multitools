@@ -21,7 +21,7 @@ const Option = ({ texto, children }) => {
         <li className={styles.optionMain} onClick={handleClick}>
             <div className={styles.option}>
                 <picture>
-                    <Image src={imagem} width={70} height={50} alt="Icone de uma Pasta" />
+                    <Image src={imagem} width={70} height={50} alt="Icone de uma Pasta" className={styles.responsiveImage}/>
                 </picture>
                 <span className={styles.title}>{texto}</span>
             </div>
