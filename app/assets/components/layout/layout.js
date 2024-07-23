@@ -4,8 +4,9 @@ import Header from '../header/header';
 import Ferramentas from '../menu/ferramentas/ferramentas';
 import stylesGlobal from '@/app/assets/styles/global.module.css';
 import Ads from '@/app/assets/components/ads/ads';
+import PropTypes from 'prop-types';
 
-export default function Layout({ page, children }) {
+const Layout = ({ page, children }) => {
     return (
         <div>
             <Header page={page} />
@@ -22,4 +23,11 @@ export default function Layout({ page, children }) {
             </div>
         </div>
     );
-}
+};
+
+Layout.propTypes = {
+    page: PropTypes.any.isRequired,
+    children: PropTypes.node.isRequired,
+};
+
+export default Layout;
