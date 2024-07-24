@@ -16,6 +16,15 @@
 .title {
     align-content: center;
 }
+.menuOpen {
+    display: flex;
+    align-items: center;
+}
+.menuOpen span {
+    color: white;
+    margin-left: 10px;
+    margin-right: -10px;
+}
 .title h1, .title span {
     font-size: 40px;
     color: #ffffff;

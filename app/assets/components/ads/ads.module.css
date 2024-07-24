@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.adsMobile {
+    width: calc(100% - 46px);
+}
+
 @media (max-width: 1300px) {
 
     .adsContainer {

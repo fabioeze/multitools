@@ -3,14 +3,14 @@ import stylesGlobal from '@/app/assets/styles/global.module.css';
 import HeaderInsideContainer from '@/app/assets/components/headerInsideContainer/headerInsideContainer';
 import styles from './ads.module.css'
 
-const Ads = () => {
+const AdsMobile = () => {
     return (
         <section>
-            <div className={styles.adsContainer}>
+            <div className={styles.adsMobile}>
                 <span>teste</span>
             </div>
         </section>
     );
 };
 
-export default Ads;
+export default AdsMobile;

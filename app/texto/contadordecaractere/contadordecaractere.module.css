@@ -49,3 +49,31 @@
     display: inline-flex;
     justify-content: center;
 }
+
+@media (min-width: 951px) and (max-width: 1130px) {
+    .lista {
+        flex-direction: column;
+    }
+    .lista li {
+        width: calc(100% - 46px);
+    }
+    .lista li:first-child,
+    .lista li:last-child {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 750px) {
+    .lista {
+        flex-direction: column;
+    }
+
+    .lista li {
+        width: calc(100% - 46px);
+    }
+    .lista li:first-child,
+    .lista li:last-child {
+        margin: 8px;
+    }
+    
+}

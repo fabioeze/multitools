@@ -5,12 +5,14 @@ import styles from './content.module.css'
 
 const Content = ({ children, texto }) => {
     return (
-        <main className={styles.main}>
-            <div className={stylesGlobal.insideContainer}>
-                <HeaderInsideContainer texto={texto} />
-                {children}
-            </div>
-        </main>
+        <section>
+            <main className={styles.main}>
+                <div className={stylesGlobal.insideContainer}>
+                    <HeaderInsideContainer texto={texto} />
+                    {children}
+                </div>
+            </main>
+        </section>
     );
 };
 

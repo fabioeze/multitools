@@ -1,7 +1,11 @@
 .navegation {
     width: 250px;
 }
-
+.mainFerramentas {
+    left: 0;
+    position: relative;
+    transition: all .3s;
+}
 .sidemenu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,4 +17,20 @@
         width: 200px;
     }
 
+}
+
+@media (max-width: 950px) {
+
+    .navegation {
+        width: calc(100vw - 30px)
+    }
+    .mainFerramentas {
+        left: -100vw;
+        position: absolute;
+        z-index: 9;
+    }
+
+    .menuOpen {
+        left: 15px;
+    }
 }
