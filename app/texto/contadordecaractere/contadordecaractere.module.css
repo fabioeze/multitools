@@ -30,26 +30,6 @@
     margin-right: -5px;
 }
 
-.textoContador h3 {
-    font-size: 40px;
-    margin-bottom: 24px;
-    margin-top: 24px;
-}
-
-.textoContador p, .textoContador ul {
-    padding: 0 48px;
-}
-
-.textoContador h3::before {
-    content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNyAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjI4IDE1LjRMOC43NiA5LjcyTDUuMTIgMTUuNEwyLjMyIDEzLjI4TDYuNiA4LjRMMC44IDcuMTJMMS44OCAzLjkyTDcuNTIgNi4yTDcgMC4xMTk5OThIMTAuNkwxMC4wOCA2LjJMMTUuOCA0TDE2LjggNy4xNkwxMC45MiA4LjRMMTUuMTYgMTMuMzJMMTIuMjggMTUuNFoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPg==);
-    font-size: 20px;
-    top: -5px;
-    width: 45px;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-}
-
 @media (min-width: 951px) and (max-width: 1130px) {
     .lista {
         flex-direction: column;

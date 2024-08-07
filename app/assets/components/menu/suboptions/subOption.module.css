@@ -1,4 +1,6 @@
 .link {
     text-decoration: none;
     color: var(--text-color-container);
+    font-size: 13px;
+    padding: 4px;
 }

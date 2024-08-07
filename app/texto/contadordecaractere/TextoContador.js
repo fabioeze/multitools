@@ -1,8 +1,8 @@
-import styles from "./contadordecaractere.module.css";
+import stylesBeneficios from "@/app/assets/styles/Beneficios.module.css";
 import AdsMobile from "@/app/assets/components/ads/adsMobile";
 import { useEffect, useState } from "react";
 
-export default function BeneficiosContador() {
+export default function TextoContador() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function BeneficiosContador() {
     }, []);
 
     return (
-        <section className={styles.textoContador}>
+        <section className={stylesBeneficios.textoBeneficios}>
             <div>
                 <h3>Sobre o Contador de Caracteres</h3>
                 <p>O Contador de Caracteres é uma ferramenta útil para quem precisa contar o número de caracteres em um texto. Seja para escrever tweets, posts em redes sociais, artigos, ou qualquer outro tipo de conteúdo, saber a contagem exata de caracteres pode ser essencial.</p>

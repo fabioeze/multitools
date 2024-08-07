@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import styles from "./contadordecaractere.module.css";
 import FormContadorDeCaractere from "./FormContadorDeCaractere";
-import BeneficiosContador from "./beneficiosContador";
+import TextoContador from "./TextoContador";
 import stylesGlobal from '@/app/assets/styles/global.module.css';
 
 export default function FunctionContadorDeCaractere() {
@@ -27,7 +27,7 @@ export default function FunctionContadorDeCaractere() {
     return (
         <section className={stylesGlobal.content}>
             <FormContadorDeCaractere/>
-            <BeneficiosContador />
+            <TextoContador />
         </section>
     );
 }

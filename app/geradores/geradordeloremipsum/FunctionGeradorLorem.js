@@ -1,6 +1,7 @@
-// components/LoremIpsumGenerator.js
+'use client'
+
 import React, { useState } from 'react';
-import styles from "./";
+import styles from "./geradordeloremipsum.module.css";
 import styleGlobal from "@/app/assets/styles/global.module.css";
 
 const loremPhrases = [
@@ -44,8 +45,8 @@ const FunctionGeradorLorem = () => {
     };
 
     return (
-        <section className={`${styles.mainSection} ${styleGlobal.mainSection}`}>
-            <div>
+        <section className={styles.mainGerador}>
+            <div className={styles.handleContent}>
                 <div>
                     <p>Número de parágrafos:</p>
                     <input

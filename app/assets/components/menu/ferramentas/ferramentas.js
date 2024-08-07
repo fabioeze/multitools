@@ -6,12 +6,15 @@ import PropTypes from 'prop-types';
 import styles from './ferramentas.module.css';
 import stylesGlobal from '@/app/assets/styles/global.module.css';
 import HeaderInsideContainer from '@/app/assets/components/headerInsideContainer/headerInsideContainer';
+
 import Option from '@/app/assets/components/menu/options/options';
+
 import SubOptionsImagens from '@/app/assets/components/menu/suboptions/subOptionsImagens';
 import SubOptionsMatematica from '@/app/assets/components/menu/suboptions/subOptionsMatematica';
 import SubOptionsTexto from '@/app/assets/components/menu/suboptions/subOptionsTexto';
 import SubOptionsCriptografia from '@/app/assets/components/menu/suboptions/subOptionsCriptografia';
 import SubOptionsProgramacao from '@/app/assets/components/menu/suboptions/subOptionsProgramacao';
+import SubOptionsGeradores from '@/app/assets/components/menu/suboptions/subOptionsGeradores';
 
 const Ferramentas = ({ menuOpen }) => {
     const [menuStatus, setMenuStatus] = useState(false);
@@ -41,6 +44,9 @@ const Ferramentas = ({ menuOpen }) => {
                             </Option>
                             <Option texto="Ferramentas de Texto" link="/texto">
                                 <SubOptionsTexto />
+                            </Option>
+                            <Option texto="Geradores" link="/geradores">
+                                <SubOptionsGeradores />
                             </Option>
                         </ul>
                     </nav>
