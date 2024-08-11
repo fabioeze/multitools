@@ -6,7 +6,10 @@ const SubOptionsTexto = () => {
     return (
         <ul>
             <li><Link href="/texto/contadordecaractere" className={styles.link}>Contador de Caractere</Link></li>
-            </ul>    );
+            <li><Link href="/texto/ordenarlinhas" className={styles.link}>Ordenar Linhas</Link></li>
+            
+        </ul>
+    );
 };
 
 export default SubOptionsTexto;
