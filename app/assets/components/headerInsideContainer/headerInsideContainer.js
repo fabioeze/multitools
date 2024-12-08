@@ -7,7 +7,7 @@ const HeaderInsideContainer = ({ texto }) => {
         <div className={styles.headerInsideContainer}>
             <span>{texto}</span>
             <picture>
-                <Image src="actionsIcons.svg" width={40} height={10.39} />
+                <Image src="/actionsIcons.svg" width={40} height={10.39} />
             </picture>
         </div>
 
