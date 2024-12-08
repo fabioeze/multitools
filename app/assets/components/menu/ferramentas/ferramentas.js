@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import PropTypes from 'prop-types';
 import styles from './ferramentas.module.css';
 import stylesGlobal from '@/app/assets/styles/global.module.css';
@@ -18,10 +17,35 @@ import SubOptionsGeradores from '@/app/assets/components/menu/suboptions/subOpti
 
 const Ferramentas = ({ menuOpen }) => {
     const [menuStatus, setMenuStatus] = useState(false);
+    const [activeOption, setActiveOption] = useState(null);
 
     useEffect(() => {
         setMenuStatus(menuOpen);
     }, [menuOpen]);
+
+    const handleOptionClick = (index) => {
+        // Toggle submenu: close if the same option is clicked again
+        setActiveOption((prev) => (prev === index ? null : index));
+    };
+
+    const renderSubmenu = (index) => {
+        switch (index) {
+            case 0:
+                return <SubOptionsMatematica />;
+            case 1:
+                return <SubOptionsImagens />;
+            case 2:
+                return <SubOptionsCriptografia />;
+            case 3:
+                return <SubOptionsProgramacao />;
+            case 4:
+                return <SubOptionsTexto />;
+            case 5:
+                return <SubOptionsGeradores />;
+            default:
+                return null;
+        }
+    };
 
     return (
         <section className={`${styles.mainFerramentas} ${menuStatus ? styles.menuOpen : ''}`}>
@@ -30,24 +54,23 @@ const Ferramentas = ({ menuOpen }) => {
                     <HeaderInsideContainer texto="FERRAMENTAS" />
                     <nav className={styles.navegation}>
                         <ul className={styles.sidemenu}>
-                            <Option texto="Matemática" link="/matematica">
-                                <SubOptionsMatematica />
-                            </Option>
-                            <Option texto="Imagens" link="/imagens">
-                                <SubOptionsImagens />
-                            </Option>
-                            <Option texto="Criptografia" link="/criptografia">
-                                <SubOptionsCriptografia />
-                            </Option>
-                            <Option texto="Programação" link="/programacao">
-                                <SubOptionsProgramacao />
-                            </Option>
-                            <Option texto="Ferramentas de Texto" link="/texto">
-                                <SubOptionsTexto />
-                            </Option>
-                            <Option texto="Geradores" link="/geradores">
-                                <SubOptionsGeradores />
-                            </Option>
+                            {[
+                                "Matemática",
+                                "Imagens",
+                                "Criptografia",
+                                "Programação",
+                                "Ferramentas de Texto",
+                                "Geradores",
+                            ].map((texto, index) => (
+                                <Option
+                                    key={index}
+                                    texto={texto}
+                                    onClick={() => handleOptionClick(index)}
+                                    isVisible={activeOption === null || activeOption === index}
+                                >
+                                    {activeOption === index && renderSubmenu(index)}
+                                </Option>
+                            ))}
                         </ul>
                     </nav>
                 </div>

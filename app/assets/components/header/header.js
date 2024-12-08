@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './header.module.css';
 import stylesGlobal from '@/app/assets/styles/global.module.css';
 import Link from 'next/link';
+import Home from '@/app/page';
 
 const Header = ({ page, onMenuClick }) => {
     const [isMobile, setIsMobile] = useState(false);
@@ -34,7 +35,7 @@ const Header = ({ page, onMenuClick }) => {
                     <>
                         <div className={styles.menuOpen} onClick={onMenuClick}>
                             <picture>
-                                <Image src="/logo.svg" width={40} height={40} className={styles.responsiveImage} />
+                                <Link href='/'><Image src="/logo.svg" width={40} height={40} className={styles.responsiveImage} /></Link>
                             </picture>
                             <span>Menu</span>
                         </div>
@@ -51,7 +52,7 @@ const Header = ({ page, onMenuClick }) => {
                     <>
                         <div className={styles.image}>
                             <picture>
-                                <Image src="/logo.svg" width={40} height={40} className={styles.responsiveImage} />
+                                <Link href='/'><Image src="/logo.svg" width={40} height={40} className={styles.responsiveImage} /></Link>
                             </picture>
                         </div>
                         <div className={styles.title}>
